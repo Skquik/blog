@@ -29,6 +29,13 @@ export default {
   */
   plugins: [
   ],
+
+  prismic: {
+    endpoint: 'https://paul-nallet.cdn.prismic.io/api/v2',
+    linkResolver: '@/plugins/link-resolver',
+    htmlSerializer: '@/plugins/html-serializer',
+  },
+
   /*
   ** Nuxt.js dev-modules
   */
@@ -40,6 +47,10 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
+    '@/modules/static',
+    '@/modules/crawler',
+    // https://prismic-nuxt.js.org/
+    '@nuxtjs/prismic'
   ],
   /*
   ** Build configuration
