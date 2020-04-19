@@ -3,3 +3,7 @@
 @import 'tailwindcss/components';
 /* purgecss end ignore */
 @import 'tailwindcss/utilities';
+
+html, body, #__layout, #__nuxt, #__layout > div{
+    height: 100vh;
+}
