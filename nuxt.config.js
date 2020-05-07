@@ -12,7 +12,7 @@ export default {
       { hid: 'description', name: 'description', content: "Salut, moi c'est Paul, je suis développeur web, je peux surement t'aider pour une idée, un projet ou encore résoudre un problème" }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: 'favicon-96x96.png' }
     ]
   },
   /*

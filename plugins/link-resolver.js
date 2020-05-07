@@ -10,9 +10,9 @@ export default function (doc) {
   if (doc.type === 'home') {
     return '/'
   }
-  
+
   if (doc.type === 'blog-post') {
-    return '/blog/' + doc.slug
+    return '/' + doc.slug
   }
 
   return '/not-found'
