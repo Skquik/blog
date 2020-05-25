@@ -1,5 +1,5 @@
 <template>
-    <div class="h-full bg-gray-100">
+    <div class="h-full shadow-lg">
         <div class="container mx-auto bg-white p-8">
             <back-button></back-button>
             <article>
