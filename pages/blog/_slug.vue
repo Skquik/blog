@@ -1,19 +1,18 @@
 <template>
     <div class="h-full shadow-lg">
         <div class="container mx-auto bg-white p-8">
-            <back-button></back-button>
+            <nuxt-link to="/blog">retour à la liste</nuxt-link>
             <article>
                 <h1 class="text-4xl font-bold">{{ document.title[0].text }}</h1>
                 <p class="text-xl py-2">introduction </p>
 
                 <section v-for="(slice, index) in slices" :key="'slice'+index ">
-                    <div v-if="slice.slice_type === 'content' " >
-                       <div v-for="(item, index) in slice.items" :key="'item'+index">
-                            <prismic-rich-text class="text-3xl font-bold py-2" :field="item.title "/> 
-                            <prismic-rich-text class="text-xl" :field="item.content"/> 
-                       </div>
-                       
-                    </div>
+                  <div v-if="slice.slice_type === 'content' " >
+                      <pr-content :slice="slice"/>
+                  </div>
+                  <div v-if="slice.slice_type === 'quote'">
+                    <pr-quote :slice="slice"/>
+                  </div>                    
                 </section>                
             </article>
         </div>
@@ -22,11 +21,13 @@
 
 <script>
 
-import backButton from "@/components/backButton"
+import quote from '@/components/prismic/quote'
+import content from '@/components/prismic/content'
 
 export default {
   components:{
-    backButton
+    "pr-quote": quote, 
+    "pr-content": content
   },
   name: 'post',
   head () {

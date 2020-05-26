@@ -1,6 +1,8 @@
 <template>
   <section>
-    <div>salut</div>
+    <div>
+        Moi c'est la navigation      
+    </div>
   </section>
 </template>
 
@@ -9,3 +11,7 @@ export default {
 
 }
 </script>
+
+<style>
+
+</style>

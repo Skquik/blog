@@ -1,7 +1,7 @@
 <template>
-     <n-link to="/blog" prefetch>
-        Retour à la liste
-      </n-link>  
+  <section>
+      <div>In content</div>
+</section>
 </template>
 
 <script>
