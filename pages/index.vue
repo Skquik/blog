@@ -45,3 +45,10 @@ export default {
   }}
 </script>
 
+<style lang="css">
+html, body, #__layout, #__nuxt, #__layout > div{
+    height: 100vh;
+}
+
+</style>
+
