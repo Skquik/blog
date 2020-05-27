@@ -6,7 +6,7 @@
           <div class="flex flex-col">
                
             <div class="bg-white shadow-lg rounded-lg  p-8 my-4 flex flex-col justify-around bg-teal-200 " v-for="(item, index) in blogPosts" :key="'item'+index">
-              <nuxt-link :to="'blog/'+item.uid" prefetch><h2 class="font-bold text-3xl hover:underline">{{$prismic.asText(item.data.title)}} </h2></nuxt-link>
+              <nuxt-link :to="item.uid" prefetch><h2 class="font-bold text-3xl hover:underline">{{$prismic.asText(item.data.title)}} </h2></nuxt-link>
               <p class="text-xl">{{$prismic.asText(item.data.description)}}</p>
             </div>
 
