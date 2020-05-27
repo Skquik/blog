@@ -25,43 +25,12 @@
 </template>
 
 <script>
-
 export default {
 
- head () {
-    return {
-      title: "Salut moi c'est Paul",
-    }
-  },
-  data(){
-      return{
-        
-      }
-  },
-  async asyncData({error}){
-    try{
-      // Query to get blog home content
-
-    } catch (e) {
-      console.log(e)
-      // Returns error page
-      error({ statusCode: 404, message: 'Page not found' })
-    }
-  }}
+}
 </script>
 
-<style lang="css">
-html, body, #__layout, #__nuxt, #__layout > div{
-    height: 100vh;
-}
- .hero-image{
-        max-height: 70vh;
-    }
-
-
-    .add-coffee:hover::after{
-        content: "☕ ?";
-    }
-
+<style>
+   
+   
 </style>
-
