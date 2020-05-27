@@ -1,6 +1,6 @@
 <template>
     <div class="h-full shadow-lg">
-        <div class="container mx-auto bg-white p-8">
+        <div class="container mx-auto bg-white p-8 " style="max-width:60%">
             <nuxt-link to="/blog">retour à la liste</nuxt-link>
             <article>
                 <h1 class="text-4xl font-bold">{{ document.title[0].text }}</h1>
