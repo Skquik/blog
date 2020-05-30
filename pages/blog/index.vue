@@ -1,7 +1,13 @@
 <template>
   <div class="h-full ">
       <div class="container mx-auto" style="max-width:60%">
-          <h1 class="text-4xl text-center pt-3">Liste des articles</h1>
+        <div class="flex justify-between items-stretch">
+          <nuxt-link to='/' class="underline flex-1 self-center ">
+              Accueil
+          </nuxt-link>
+          <h1 class="flex-auto text-center text-4xl">Liste des articles</h1>
+          <div class="flex-1 "></div>
+        </div>
           <p class="text-center">Une liste d'article avec ma vision</p>
           <div class="flex flex-col">
                
@@ -19,6 +25,11 @@
 <script>
 export default {
 name:"posts", 
+head(){
+  return{
+    title: "Liste des articles"
+  }
+}, 
 async asyncData({ $prismic, params, error}){
   try{
     console.log("bonjour")

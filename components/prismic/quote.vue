@@ -1,5 +1,5 @@
 <template>
-  <section class="text-gray-500 text-center">
+  <section class="text-gray-500 text-center p-6">
       <q class="text-3xl text-gray-500">{{slice.primary.quote[0].text}}</q><br>
       <p>| {{slice.primary.name_of_the_author[0].text}}</p>
   </section>
